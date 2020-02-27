@@ -1,5 +1,5 @@
 * {
-  /* border: 1px solid #000; */
+  border: 1px solid #000;
   font-family: '微軟正黑體';
   box-sizing: border-box;
   vertical-align: top;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  height: 3000px;
+  /* height: 3000px; */
   background-color: #eee;
 }
 
@@ -199,7 +199,7 @@ hr {
 }
 
 .section1-1 {
-  display: inline-block;
+  position: relative;
   padding: 29px;
   padding-top: 25px;
   overflow: hidden;
@@ -230,7 +230,7 @@ hr {
 }
 
 .scetion1-2 {
-  display: inline-block;
+  vertical-align: top;
 }
 
 .section1-2 .title {
@@ -246,7 +246,6 @@ hr {
   width: 100%;
   margin-top: 50px;
   font-size: 14px;
-  vertical-align: middle;
 }
 
 .tools .tool {

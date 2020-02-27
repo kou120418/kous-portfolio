@@ -24,7 +24,7 @@ var vm = new Vue({
       link: "https://kou120418.github.io/demo-printing/dist/index",
       title: "捲動式網頁製作：印刷術的故事",
       info: "使用 Bootstrap 製作 navbar，並結合 Scrollr 製作網頁互動效果",
-      tools: "html, css, javascript, Bootstrap,",
+      tools: "html, css, javascript, Bootstrap",
     }, {
       img: "./img/momo-pic.jpg",
       link: "https://kou120418.github.io/demo-momo/dist/index",
