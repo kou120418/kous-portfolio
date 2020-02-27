@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kou's Portfolio</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="space1"></div>
+  <div class="navbar navbar-top">
+    <div class="container">
+      <div id="top">
+        <a href="">Kou</a>
+      </div>
+      <ul class="navlist">
+
+        <li class="li-sections">
+          <a href="#web-area">Web</a>
+        </li>
+        <li class="li-sections">
+          <a href="#contact-area">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div id="whoAmI">
+    <div class="who-area who-left">
+      <div class="circle circle1"><img
+          src="https://scontent.ftpe8-1.fna.fbcdn.net/v/t1.0-9/88113743_2886732371393389_8430299509535277056_n.jpg?_nc_cat=109&_nc_ohc=5mkB--VIcUkAX9Xi18J&_nc_ht=scontent.ftpe8-1.fna&oh=6d55cd95b09f10ec7acd337573b4896b&oe=5EFB0D99"
+          alt=""></div>
+    </div>
+    <div class="who-area who-right"><span><b>嗨！</b>歡迎來到我的網站，我叫俞光遠，或者在網路上你可以稱呼我為Kou。<br>於
+        2019年開始接觸網頁設計及前端技術，雖然本身並非資訊工程背景，但憑藉著耐心及對學習新事物的好奇心，現今已有 HTML、CSS、JavaScript 三大核心技能的實作能力。目前也對 Bootstrap 框架、RWD
+        響應式設計、Vue.js…… 等常用技能進行鑽研。<br><br>休閒時間除了鑽研前端新知外，也喜歡學習繪圖創作相關的興趣。</span></div>
+  </div>
+  <hr>
+  <div class="web-title">
+    <div class="zh-title">網頁專案</div>
+    <div class="eng-title">Web Project</div>
+  </div>
+  <div id="web-area" v-for="work in works">
+    <div class="web-sections section1-1">
+      <a href="{{work.link}}" target="_blank">前往網站</a>
+      <img src="{{work.img}}" alt="">
+    </div>
+    <div class="web-sections section1-2">
+      <h2 class="title">{{work.title}}</h2>
+      <span class="info">{{work.info}}</span>
+      <span class="tools">工具：<div class="tool">{{work.tools}}</div></span>
+    </div>
+  </div>
+  <hr>
+  <div id="contact-area">
+    <div class="contact-title">
+      <div class="zh-title">聯絡我</div>
+      <div class="eng-title">Contact</div>
+    </div>
+    <div class="contact-info">
+      <div class="link">
+        <p>email：kou120418@gmail.com</p>
+        <p>也可以填寫下列表單，我會盡速回復您！</p>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form action="">
+        <input type="text" placeholder="  姓名 / 單位">
+        <input type="text" placeholder="  email">
+        <input type="text" placeholder="  聯絡電話">
+        <textarea name="" id="message" cols="65" rows="15" placeholder=" 我想詢問關於……"></textarea>
+        <button id="submit-btn" button="submit">送出</button>
+      </form>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.28/vue.js'></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
