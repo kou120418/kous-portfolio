@@ -199,6 +199,7 @@ hr {
 }
 
 .section1-1 {
+  float: left;
   position: relative;
   padding: 29px;
   padding-top: 25px;
