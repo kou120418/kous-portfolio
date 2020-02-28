@@ -44,8 +44,10 @@
   </div>
   <div id="web-area" v-for="work in works">
     <div class="web-sections section1-1">
-      <a href="{{work.link}}" target="_blank">前往網站</a>
-      <img src="{{work.img}}" alt="">
+      <div class="link opacity-none"><a href="{{work.link}}" target="_blank">前往網站</a></div>
+      <div class="web-pics">
+        <img src="{{work.img}}" alt="">
+      </div>
     </div>
     <div class="web-sections section1-2">
       <h2 class="title">{{work.title}}</h2>

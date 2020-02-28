@@ -1,5 +1,5 @@
 * {
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   font-family: '微軟正黑體';
   box-sizing: border-box;
   vertical-align: top;
@@ -206,20 +206,20 @@ hr {
   overflow: hidden;
 }
 
-.section1-1 img {
+.web-pics {
   position: relative;
   width: 450px;
   height: auto;
   margin: auto 0px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
-.section1-1 img:hover {
-  transition: 0.2s;
-  filter: brightness(.5);
+.dark-blur {
+  transition: 0.3s;
+  filter: brightness(.5) blur(2px);
 }
 
-.section1-1 a {
+.link a {
   z-index: 20;
   position: absolute;
   text-decoration: none;
@@ -228,6 +228,10 @@ hr {
   font-size: 25px;
   left: 200px;
   top: 150px;
+}
+
+.opacity-none {
+  opacity: 0;
 }
 
 .scetion1-2 {

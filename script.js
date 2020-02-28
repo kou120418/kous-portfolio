@@ -35,6 +35,22 @@ var vm = new Vue({
   }
 });
 
-// const pics = document.querySelectorAll('.web-sections');
+const webpics = document.querySelectorAll('.web-pics');
+const weblink = document.querySelectorAll('.link')
 
-// pics.addEventListener('mouseenter', showLink);
+function showLink() {
+  this.classList.add('dark-blur');
+  weblink.classList.remove('opacity-none');
+};
+
+function dontShowLink() {
+  this.classList.remove('dark-blur');
+  weblink.classList.add('opacity-none');
+};
+
+webpics.forEach(function (webpic) {
+  return webpic.addEventListener('mouseenter', showLink);
+});
+webpics.forEach(function (webpic) {
+  return webpic.addEventListener('mouseleave', dontShowLink);
+});
