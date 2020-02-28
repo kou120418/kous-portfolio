@@ -36,17 +36,17 @@ var vm = new Vue({
 });
 
 const webpics = document.querySelectorAll('.web-pics');
-const weblink = document.querySelectorAll('.link')
+const weblink = document.querySelectorAll('.link');
 
 function showLink() {
   this.classList.add('dark-blur');
   weblink.classList.remove('opacity-none');
-};
+}
 
 function dontShowLink() {
   this.classList.remove('dark-blur');
   weblink.classList.add('opacity-none');
-};
+}
 
 webpics.forEach(function (webpic) {
   return webpic.addEventListener('mouseenter', showLink);
