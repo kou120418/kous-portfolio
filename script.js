@@ -1,4 +1,4 @@
-$(window).scroll(function (evt) {
+$(window).scroll(function () {
   if ($(window).scrollTop() > 0) {
     $(".navbar").removeClass("navbar-top");
     $(".navbar").addClass("navbar-dark ");
@@ -35,22 +35,26 @@ var vm = new Vue({
   }
 });
 
-const webpics = document.querySelectorAll('.web-pics');
-const weblink = document.querySelectorAll('.link');
+const webContainers = document.querySelectorAll('.web-container');
 
-function showLink() {
-  this.classList.add('dark-blur');
-  weblink.classList.remove('opacity-none');
+function showLink(webPic, webLink) {
+  webPic.classList.add('dark-blur');
+  webLink.classList.remove('opacity-none');
 }
 
-function dontShowLink() {
-  this.classList.remove('dark-blur');
-  weblink.classList.add('opacity-none');
+function hideLink(webPic, webLink) {
+  webPic.classList.remove('dark-blur');
+  webLink.classList.add('opacity-none');
 }
 
-webpics.forEach(function (webpic) {
-  return webpic.addEventListener('mouseenter', showLink);
-});
-webpics.forEach(function (webpic) {
-  return webpic.addEventListener('mouseleave', dontShowLink);
+webContainers.forEach(function (webContainer) {
+  const webPic = webContainer.querySelector('.web-pics');
+  const linkEl = webContainer.querySelector('.link');
+
+  webContainer.addEventListener('mouseenter', function () {
+    showLink(webPic, linkEl);
+  });
+  webContainer.addEventListener('mouseleave', function () {
+    hideLink(webPic, linkEl);
+  });
 });

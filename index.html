@@ -10,11 +10,11 @@
 
 <body>
   <!-- partial:index.partial.html -->
-  <div class="space1"></div>
+  <div id="space-top"></div>
   <div class="navbar navbar-top">
     <div class="container">
       <div id="top">
-        <a href="">Kou</a>
+        <a href="#space-top">Kou</a>
       </div>
       <ul class="navlist">
 
@@ -44,9 +44,11 @@
   </div>
   <div id="web-area" v-for="work in works">
     <div class="web-sections section1-1">
-      <div class="link opacity-none"><a href="{{work.link}}" target="_blank">前往網站</a></div>
-      <div class="web-pics">
-        <img src="{{work.img}}" alt="">
+      <div class="web-container">
+        <div class="web-pics">
+          <img src="{{work.img}}" alt="">
+        </div>
+        <div class="link opacity-none"><a href="{{work.link}}" target="_blank">前往網站</a></div>
       </div>
     </div>
     <div class="web-sections section1-2">
