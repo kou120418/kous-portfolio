@@ -58,3 +58,7 @@ webContainers.forEach(function (webContainer) {
     hideLink(webPic, linkEl);
   });
 });
+
+function jumpAlert() {
+  alert('您好，感謝您的使用，此表單僅為前端展示用途，若需聯繫請透過上方email，造成不便敬請見諒。');
+}
