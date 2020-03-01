@@ -31,6 +31,12 @@ var vm = new Vue({
       title: "電商一頁式網站仿製：momo購物網",
       info: "將 momo 購物網的現有素材，結合 RWD 響應式設計、活動幻燈片、側邊導覽列……等功能進行練習實作",
       tools: "html, css, javascript"
+    }, {
+      img: "./img/todolist-pic.jpg",
+      link: "https://kou120418.github.io/demo-todolist/",
+      title: "todo list 功能",
+      info: "使用 Vue 實作擁有變更完成狀態、新增項目、刪除項目的功能表單",
+      tools: "html, css, javascript, Bootstrap, Vue"
     }]
   }
 });
