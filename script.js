@@ -32,6 +32,12 @@ var vm = new Vue({
       info: "將 momo 購物網的現有素材，結合 RWD 響應式設計、活動幻燈片、側邊導覽列……等功能進行練習實作",
       tools: "html, css, javascript"
     }, {
+      img: "./img/imdb-pic.jpg",
+      link: "https://kou120418.github.io/imdb-movie-library/",
+      title: "API 串接：IMDB 評分網",
+      info: "使用 IMDB 的歷年電影資料，結合 async & await 撰寫延遲列出符合關鍵字的搜尋欄，並能在搜尋欄下方印出電影資料，加入了簡易的比較功能，以對兩部電影進行評比",
+      tools: "html, css, javascript, Bulma css"
+    }, {
       img: "./img/todolist-pic.jpg",
       link: "https://kou120418.github.io/demo-todolist/",
       title: "todo list 功能",
